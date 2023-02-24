@@ -29,13 +29,13 @@ function App() {
   }, [count]);
 
   //DEMO FETCH HOLIDAYS
-  useEffect(() => {
-    fetch("https://sholiday.faboul.se/dagar/v2.1/2015")
-    .then((response) => response.json())
-    .then((result) => {
-      console.log(result);
-    });
-  }, []);
+  // useEffect(() => {
+  //   fetch("https://sholiday.faboul.se/dagar/v2.1/2015")
+  //   .then((response) => response.json())
+  //   .then((result) => {
+  //     console.log(result);
+  //   });
+  // }, []);
 
 
   return (

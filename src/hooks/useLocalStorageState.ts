@@ -5,8 +5,7 @@ export function useLocalStorageState<State>(initialState: State, key: string) {
     //Ladda från LS
     const stringState = localStorage.getItem(key);
     if (!stringState) return initialState;
-    const state = JSON.parse(stringState) as State;
-    return state;
+    return JSON.parse(stringState) as State;
 
   })
 

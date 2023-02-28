@@ -1,8 +1,19 @@
 import { useEffect, useState } from 'react';
+import styled from 'styled-components';
 import './App.css';
 import reactLogo from './assets/react.svg';
 import { useLocalStorageState } from './hooks/useLocalStorageState';
 import { useLogger } from './hooks/useLogger';
+
+const StyledButton = styled.button`
+  background: transparent;
+  border-radius: 3px;
+  border: 2px solid palevioletred;
+  color: palevioletred;
+  margin: 0 1em;
+  padding: 0.25em 1em;
+  cursor: pointer;
+`;
 
 function App() {
   console.log("RENDER APP");
@@ -49,6 +60,7 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
+      <StyledButton>Styled button</StyledButton>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
